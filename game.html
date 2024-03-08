@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="game.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+    <!--Using any of the tools you've worked with so far
+        create a game of Tic-Tac-Toe.
+        a. Create a Tic-Tac-Toe game grid using your HTML element of choice.
+        b. When a cell in the grid is clicked, an X or O should appear in 
+            that spot depending on whose turn it is.
+        c. A heading should say whether it is X's or O's turn 
+            and change with each move made.
+        d. A button should be available to clear the grid and restart the game.
+        e. When a player has won, or the board is full and the game results in a draw,
+            a Bootstrap alert or similar Bootstrap component should appear across the screen
+            announcing the winner.-->
+                
+    <main class="background">
+        <section class="title">
+            <p>Tic-Tac-Toe</p>
+        </section>
+        <section class="display">
+            Player <span class="display-player playerX">X</span>'s Turn
+        </section>
+        <!-- Game board -->
+        <section class="container">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </section>
+        <section class="display announcer hide"></section>
+        <section class="controls">
+            <button id="reset">Play Again</button>
+        </section>
+    </main>
+
+    </div>
+
+
+<script src="./game.js"></script>
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+</body>
+</html>
